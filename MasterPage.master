@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Simple 2 Page Website Asp.Net</title>
+    <link href="Content/bootstrap.cyborg.css" rel="stylesheet" />
+    <link href="site.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <%--<nav>
+            <ul class="nav nav-pills">
+                <li class=""><a href="AboutUs.html">About Us</a></li>
+                <li class="active"><a href="#">Events</a></li>
+            </ul>
+        </nav>--%>
+        <div>
+            <asp:ContentPlaceHolder ID="Navigation" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
